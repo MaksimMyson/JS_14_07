@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label for="statusFillter">Статус:</label>
+        <select name="statusFillter" id="statusFillter">
+            <option value="all">Всі</option>
+            <option value="active">Грає</option>
+            <option value="inactive">Відпочиває</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="pointsFillter">Досвід:</label>
+        <input type="range" id="pointsFillter" min="0" max="100" value="1">
+        <span id="pointsFillterValue">1</span>
+    </div>
+
+    <div class="player_box"></div>
+
+    <script src="./JS/renderPlayers.js" type="module"></script>
+</body>
+</html>
